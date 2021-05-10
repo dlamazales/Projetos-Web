@@ -1,0 +1,57 @@
+.h-primary {
+  font-size: 8.5rem;
+  text-align: center;
+  color: $color-grey-light-1;
+  letter-spacing: 0.4rem;
+
+  &::after {
+    display: block;
+    height: 1px;
+    background-color: $color-grey-light-1;
+    content: " ";
+    width: 80rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+  }
+}
+
+.h-secondary {
+  font-size: 5.5rem;
+  font-weight: 300;
+}
+
+.h-secondary-body {
+  font-size: 6.5rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 1/-1;
+  letter-spacing: 0.5rem;
+
+  &::after {
+    display: block;
+    height: 1px;
+    background-color: $color-grey-dark-1;
+    content: " ";
+    width: 80rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+  }
+}
+
+.h-tertiary {
+  color: $color-primary-dark;
+  font-size: 2.5rem;
+}
+
+.h-skills {
+  color: #000;
+  font-size: 2.5rem;
+}
+
+.h-fourth {
+  color: $color-primary-dark;
+  font-size: 2rem;
+  font-weight: 700;
+}

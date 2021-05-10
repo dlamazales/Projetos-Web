@@ -1,0 +1,51 @@
+.header {
+  background-image: linear-gradient(
+      rgba($color-primary-darker, 0.85),
+      rgba($color-primary-darker, 0.85)
+    ),
+    url(../img/header-photo.jfif);
+  background-size: cover;
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav-head {
+  position: absolute;
+  top: 0;
+  right: 10rem;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 10rem;
+  height: 7rem;
+  margin-top: 2rem;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  padding: 1.5rem;
+
+  &__item {
+    padding: 0.5rem 1rem;
+    font-size: 2.5rem;
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: $color-grey-light-1;
+      transition: all 0.2s;
+    }
+
+    a:active,
+    a:hover {
+      padding-bottom: 1rem;
+      border-bottom: 2px solid $color-grey-light-1;
+    }
+  }
+}

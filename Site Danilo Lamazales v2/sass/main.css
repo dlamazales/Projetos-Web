@@ -1,0 +1,247 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #f9f7f6;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh repeat(4, min-content) 30vh;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.--mg-bt-small {
+  margin-bottom: 2rem;
+}
+
+.about-me {
+  color: #5f5a7a;
+  display: grid;
+  grid-template-columns: 1fr 30rem 1fr;
+  grid-template-rows: repeat(3, min-content);
+  grid-column: center-start / center-end;
+  column-gap: 2rem;
+  row-gap: 3rem;
+}
+
+.about-me__text-box {
+  padding: 1.5rem 2.5rem;
+  align-self: center;
+}
+
+.about-me__p {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.about-me__img-perfil {
+  width: 30rem;
+  border-radius: 50%;
+  border: 1rem solid #aaa;
+}
+
+.about-me__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 1.5rem 2.5rem;
+  align-self: center;
+  font-size: 2rem;
+  line-height: 1.2;
+  list-style: none;
+}
+
+.about-me__btn-text {
+  grid-column: 1/-1;
+  justify-self: center;
+  font-size: 1.8rem;
+}
+
+.about-me__icons {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.about-me__social-media {
+  height: 5rem;
+  width: 5rem;
+  align-self: center;
+  fill: #6155a6;
+}
+
+.header {
+  background-image: linear-gradient(rgba(62, 52, 114, 0.85), rgba(62, 52, 114, 0.85)), url(../img/header-photo.jfif);
+  background-size: cover;
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav-head {
+  position: absolute;
+  top: 0;
+  right: 10rem;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 10rem;
+  height: 7rem;
+  margin-top: 2rem;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  padding: 1.5rem;
+}
+
+.main-nav__item {
+  padding: 0.5rem 1rem;
+  font-size: 2.5rem;
+}
+
+.main-nav__item a:link,
+.main-nav__item a:visited {
+  text-decoration: none;
+  color: #f9f7f6;
+  transition: all 0.2s;
+}
+
+.main-nav__item a:active,
+.main-nav__item a:hover {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f9f7f6;
+}
+
+.skills {
+  display: grid;
+  background-color: #3e3472;
+  grid-column: full-start / full-end;
+}
+
+.skills__big-card {
+  background-color: #fff;
+  width: 60%;
+  justify-self: center;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  transform: translateY(-10rem);
+  border: 2px solid #000;
+}
+
+.skills__small-card {
+  padding: 2rem 3rem;
+  color: #5f5a7a;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.skills__small-card:not(:last-child) {
+  border-right: 2px solid #000;
+}
+
+.skills__small-card ul {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.skills__icon {
+  height: 8rem;
+  fill: #6155a6;
+  justify-self: center;
+}
+
+.skills__text {
+  font-size: 1.8rem;
+}
+
+.skills__list-lan {
+  display: block;
+}
+
+.h-primary {
+  font-size: 8.5rem;
+  text-align: center;
+  color: #f9f7f6;
+  letter-spacing: 0.4rem;
+}
+
+.h-primary::after {
+  display: block;
+  height: 1px;
+  background-color: #f9f7f6;
+  content: " ";
+  width: 80rem;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+
+.h-secondary {
+  font-size: 5.5rem;
+  font-weight: 300;
+}
+
+.h-secondary-body {
+  font-size: 6.5rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 1/-1;
+  letter-spacing: 0.5rem;
+}
+
+.h-secondary-body::after {
+  display: block;
+  height: 1px;
+  background-color: #3b384b;
+  content: " ";
+  width: 80rem;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+
+.h-tertiary {
+  color: #6155a6;
+  font-size: 2.5rem;
+}
+
+.h-skills {
+  color: #000;
+  font-size: 2.5rem;
+}
+
+.h-fourth {
+  color: #6155a6;
+  font-size: 2rem;
+  font-weight: 700;
+}
+/*# sourceMappingURL=main.css.map */
