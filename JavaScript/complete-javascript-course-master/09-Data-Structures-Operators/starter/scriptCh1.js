@@ -1,3 +1,4 @@
+/*
 const game = {
   team1: 'Bayern Munich',
   team2: 'Borrussia Dortmund',
@@ -53,6 +54,34 @@ const game = {
   },
 };
 
+const gameEvents = new Map([
+  [17, '⚽ GOAL'],
+  [36, '� Substitution'],
+  [47, '⚽ GOAL'],
+  [61, '� Substitution'],
+  [64, '� Yellow card'],
+  [69, '� Red card'],
+  [70, '� Substitution'],
+  [72, '� Substitution'],
+  [76, '⚽ GOAL'],
+  [80, '⚽ GOAL'],
+  [92, '� Yellow card'],
+]);
+
+const events = [...new Set(gameEvents.values())];
+console.log(events);
+
+gameEvents.delete(69);
+console.log(gameEvents);
+
+console.log(
+  `An event happened on average, every ${90 / gameEvents.size} minutes`
+);
+
+for (const [key, event] of gameEvents) {
+  console.log(`${key <= 45 ? `first half` : `Second half`} ${key}: ${event} `);
+}
+
 /*
 let [p1, p2] = game.players;
 console.log(p1, p2);
@@ -72,7 +101,7 @@ console.log(team1, x, team2);
 game.printGoals('Lewandowski', 'Gnarby', 'Hazard');
 
 team1 < team2 && console.log('Team1');
-*/
+
 
 for (const [goal, player] of Object.entries(game.scored)) {
   console.log(`Goal ${parseInt(goal) + 1}: ${player}`);
@@ -96,3 +125,25 @@ for (const player of game.scored) {
   scorers[player] ? scorers[player]++ : (scorers[player] = 1);
 }
 console.log(scorers);
+
+*/
+
+// Challenge 4
+
+document.body.append(document.createElement('textarea'));
+document.body.append(document.createElement('button'));
+
+document.querySelector('button').addEventListener('click', function () {
+  const textArea = document.querySelector('textarea').value;
+  const rows = textArea.split('\n');
+
+  for (const [i, row] of rows.entries()) {
+    const [first, second] = row.toLowerCase().trim().split('_');
+
+    const output = `${first}${second.replace(
+      second[0],
+      second[0].toUpperCase()
+    )}`;
+    console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
+  }
+});
