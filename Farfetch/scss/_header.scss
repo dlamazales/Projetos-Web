@@ -1,0 +1,27 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba($--color-black, 0.2),
+      rgba($--color-black, 0.2)
+    ),
+    url("../src/img/hero2.jpg");
+  background-size: cover;
+  color: $--color-gray;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  padding-left: 4rem;
+
+  &__title {
+    font-size: 5.5rem;
+    line-height: 1;
+    font-family: $--font-title;
+  }
+
+  &__subtitle {
+    font-size: 1.52rem;
+    font-family: $--font-title;
+  }
+}

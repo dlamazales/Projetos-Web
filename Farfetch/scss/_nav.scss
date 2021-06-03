@@ -1,0 +1,25 @@
+.nav {
+  position: fixed;
+  top: 1rem;
+  right: 6rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $--color-gray;
+    padding-bottom: 0.2rem;
+  }
+
+  &__link:active,
+  &__link:hover {
+    border-bottom: 1px solid $--color-highlight;
+  }
+}

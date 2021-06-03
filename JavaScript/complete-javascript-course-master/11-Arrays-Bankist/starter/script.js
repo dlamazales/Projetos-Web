@@ -63,9 +63,11 @@ const inputClosePin = document.querySelector('.form__input--pin');
 
 // FUNCTIONS
 
-const displayMovements = function (movements) {
+const displayMovements = function (movements, sort = false) {
   containerMovements.innerHTML = '';
-  movements.forEach((mov, i) => {
+  const movs = sort ? movements.slice().sort((a, b) => a - b) : movements;
+
+  movs.forEach((mov, i) => {
     const type = mov > 0 ? 'deposit' : 'withdrawal';
     const realI = i + 1;
     const html = `
@@ -190,6 +192,14 @@ btnClose.addEventListener('click', function (e) {
   }
 
   inputCloseUsername.value = inputClosePin.value = '';
+});
+
+let sorted = false;
+btnSort.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  displayMovements(currAcc.movements, !sorted);
+  sorted = !sorted;
 });
 
 /////////////////////////////////////////////////
@@ -340,5 +350,26 @@ console.log(movements.find(mov => mov < 0));
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 console.log(movements.some(mov => mov > 5000));
+
+
+///////////////////////////////////////////////////////
+// Sorting Arrys
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+console.log(movements);
+
+movements.sort((a, b) => {
+  if (a > b) return 1;
+  if (a < b) return -1;
+});
+
+movements.sort((a, b) => {
+  if (a < b) return 1;
+  if (a > b) return -1;
+});
+
+console.log(movements);
+
 
 */
