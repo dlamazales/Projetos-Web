@@ -1,0 +1,60 @@
+.menu{
+    padding: 8rem 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+    gap: 2rem;
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 8rem 1rem;
+    }
+
+    &__box{
+        display: flex;
+        padding-right: 2rem;
+        
+    }
+
+    &__courses{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        flex: 1 1 0;
+
+        &:not(:first-child):before{
+            content: "";
+            position: absolute;
+            height: 400%;
+            top: -180%;
+            left: 0;
+            border-right: 1px solid black;
+            z-index: 10;
+
+        }
+    }
+
+    &__item{
+        padding: 1rem 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    &__title{
+        overflow: hidden;
+    }
+}
+
+
+.main-margin{margin-top: 12rem;}
+.sides-margin{margin-top: 8rem;}
+.desserts-margin{margin-top: 3rem;}
+
+.title__main{
+    transform: translateX(-1rem);
+    
+}

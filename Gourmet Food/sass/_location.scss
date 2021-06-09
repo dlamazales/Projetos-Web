@@ -1,0 +1,38 @@
+.location{
+    position: relative;
+    height: 50vh;
+    z-index: 0;
+
+    &__box{
+        position: absolute;
+        z-index: 10;
+        top: 5rem;
+        left: 15rem;
+        width: 20rem;
+        padding: 1rem 2rem;
+        z-index: 0;
+    }
+
+    &__title{
+        position: relative;
+        font-family: $--font-head;
+        font-size: 4rem;
+        text-align: center;
+        z-index: 20;
+    }
+
+    &__text{
+        position: relative;
+        background-color: white;
+        padding: 1rem;
+        padding-top: 2rem;
+        transform: translateY(-3rem);
+        font-size: 1.3rem;
+        z-index: 5;
+    }
+}
+
+.map{
+    height: 100%;
+    width: 100%;
+}

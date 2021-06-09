@@ -1,0 +1,93 @@
+.nav{
+    position: relative;
+    font-family: $--font-head;
+    z-index: 500;
+
+    &__list{
+        width: 100%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        padding: 1rem 2rem;
+        list-style: none;
+    }
+
+    &__link:link,
+    &__link:visited{
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        transition: all .4s;
+    }
+
+    &__link:active,
+    &__link:hover{
+        color: $--color-primary;
+        border-bottom: 1px solid black;
+    }
+
+    &__item--break{
+        margin-left: auto;
+    }
+
+    &__logo{
+        height: 7rem;
+    }
+}
+
+.side{
+    font-family: $--font-head;
+    position: relative;
+    z-index: 500;
+
+    &__list{
+        font-size: 1.8rem;
+        list-style: none;
+        position: fixed;
+        top: 45%;
+        bottom: auto;
+        left: 1rem;
+    }
+
+    &__item{
+        position: relative;
+        transition: all .8s;
+
+        &--0{
+            transform: translateY(100%);
+            transition: all .8s;
+            
+        }
+    }
+
+    &__item:not(:first-child)::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transition: width .8s;
+    }
+
+    &__item:hover:before{
+        width: 150%;
+    }
+
+
+    
+}
+
+.side-left{
+    position: fixed;
+    top: 50%;
+    right: .5rem;
+    background-color: white;
+    padding: .5rem 1rem;
+    font-family: $--font-head;
+    font-size: 1.8rem;
+    transform: rotate(-90deg);
+}

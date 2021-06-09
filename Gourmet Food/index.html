@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gourmet</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="rcs/fonts/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel='stylesheet' type='text/css' media='screen' href='sass/main.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <img src="rcs/img/logo_transparent.png" alt="logo" class= "nav__logo">
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">ABOUT</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">COMMUNITY</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">LOCATION</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">OUR MENU</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">RECIPIES</a></li>
+            <li class="nav__item nav__item--break"><a href="#" class="nav__link">CONTACT</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">LOGIN</a></li>
+        </ul>
+    </nav>
+
+    <nav class="side">
+        <ul class="side__list">
+            <li class="side__item side__item--0" id="side-n">01</li>
+            <li class="side__item side__item--1">&nbsp;</li>
+            <li class="side__item side__item--2">&nbsp;</li>
+            <li class="side__item side__item--3">&nbsp;</li>
+            <li class="side__item side__item--4">&nbsp;</li>
+            <li class="side__item side__item--5">&nbsp;</li>
+            <li class="side__item side__item--6">&nbsp;</li>
+        </ul>
+    </nav>
+
+    <div class="side-left">REQUEST INFO</div>
+
+    <header>
+        <h1 class="hero_header_1">The Best Food <span>Experience</span></h1>
+        <h2 class="hero_header_2">Now in london</h2>
+        <img src="rcs/img/logo_transparent.png" alt="" class="logo__head">
+    </header>
+
+    <section class="community js--n">
+        <div class="community__head">
+            <h2 class="heading__secondary">MEET OUR</h2>
+            <h2 class="heading__secondary heading__secondary--bg">COMMUNITY</h2>
+            <button class="btn">KNOW MORE</button>
+            <p class="community__paragraph js--commu-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae tempus metus. Nulla vel justo nec felis mattis eleifend eu id quam.</p>
+        </div>
+
+        <div class="card card--1 js--commu-1 animate__slow">
+            <ion-icon name="logo-instagram" class="card__icon"></ion-icon>
+            <img src="rcs/img/community_1.png" alt="community 1" class="card__img">
+        </div>
+
+        <div class="card card--2 js--commu-1 animate__slow">
+            <h3 class="card__title" id="">@buzzfeedfood</h3>
+            <p class="card__text">It’s taco Tuesday! These tacos from @jesseszewczyk have no added sugars and are SO good 🌮. Find the recipe from the link in our bio!📷: @taylormillerphoto</p>
+            <div class="card__likes">
+                <ion-icon name="heart-sharp"></ion-icon> 60
+                <ion-icon name="chatbox-sharp"></ion-icon> 14.7K
+            </div>
+            
+        </div>
+
+        <div class="card card--3 js--commu-2 animate__slow">
+            <h3 class="card__title">@love_food</h3>
+            <p class="card__text">Waffle sticks in Copenhagen!😍  Milk chocolate with sprinkles, dark chocolate with coconut and milk chocolate with peanuts!📷:           @foodwithmichel #lovefood </p>
+            <div class="card__likes">
+                <ion-icon name="heart-sharp"></ion-icon> 789
+                <ion-icon name="chatbox-sharp"></ion-icon> 99.7K
+            </div>
+        </div>
+
+        <div class="card card--4 js--commu-2 animate__slow">
+            <ion-icon name="logo-instagram" class="card__icon"></ion-icon>
+            <img src="rcs/img/community_2.png" alt="community 2" class="card__img">
+        </div>
+
+        <p class="community__text community__text--1 js--commu-2 animate__slow">Cras vel neque vitae lorem interdum sodales. Nunc a elit vel turpis facilisis vulputate non eget elit. Sed sit amet gravida orci. Duis dapibus, orci sit amet facilisis elementum, sem metus varius arcu, quis varius turpis eros vel est.</p>
+
+        <p class="community__text community__text--2 js--commu-3 animate__slow">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+
+        <div class="card card--5 js--commu-3 animate__slow">
+            <h3 class="card__title">@buzzfeedfood</h3>
+            <p class="card__text"> Getting into long weekend mode like 🍤 #pancipalabok (📷 @jeepeynyc) </p>
+            <div class="card__likes">
+                <ion-icon name="heart-sharp"></ion-icon> 152
+                <ion-icon name="chatbox-sharp"></ion-icon> 18.7K
+            </div>
+        </div>
+
+        <div class="card card--6 js--commu-3 animate__slow">
+            <ion-icon name="logo-instagram" class="card__icon"></ion-icon>
+            <img src="rcs/img/community_3.png" alt="community 2" class="card__img">
+        </div> 
+    </section>
+
+    <section class="location js--n">
+        <div class="map" id="map"></div>
+        <div class="location__box">
+            <h3 class="location__title">LOCATION</h3>
+            <p class="location__text">12 Upper Sr. Martion's Lane WC2H 9FB, London</p>
+        </div>
+    </section>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlf62kmPUBFptS9Ur1LcCgM7gPFA0RD58&callback=initMap">
+    </script>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <section class="menu js--menu js--n">
+        <h2 class="heading__secondary heading__secondary--bg">OUR MENU</h2>
+        <button class="btn">KNOW MORE</button>
+
+        <div class="menu__box" id="menu_1">
+            <div class="menu__courses js--menu-1 parallax_scroll">
+                <h2 class="heading__secondary">STARTERS</h2>
+                <div class="menu__item">
+                    <h3 class="heading__tertiary">QUINOA CROQUETTAS</h3>
+                    <p class="menu__ingredients">Quinoa and cheddar croquettas with aju rocotto & pineaple salsa (v)</p>
+                    <button class="btn__empty">$4.95</button>
+                </div>
+                <div class="menu__item">
+                    <h3 class="heading__tertiary">CHIFA CJOCJARRONES</h3>
+                    <p class="menu__ingredients">Slow cooked, crispy pork belly with sweet soy sauce</p>
+                    <button class="btn__empty">$6.95</button>
+                </div>
+                <div class="menu__item">
+                    <h3 class="heading__tertiary">CALAMARES</h3>
+                    <p class="menu__ingredients">Crispy baby squid with pickled jalapeño miso salsa</p>
+                    <button class="btn__empty">$6.95</button>
+                </div>
+            </div>
+    
+            <div class="menu__courses main-margin parallax_scroll-neg" id="menu_2">
+                <div class="menu__title"><h2 class="heading__secondary title__main">MAIN<br>COURSES</h2></div>
+                <div class="menu__item">
+                    <h3 class="heading__tertiary">EL CLASICO</h3>
+                    <p class="menu__ingredients">Sea bass ceviche with aji limo     tiger’s milk, sweet potato purée, choclo corn, red onion,       coriander & plantain (gf)</p>
+                    <button class="btn__empty">$8.95</button>
+                </div>
+                <div class="menu__item">
+                    <h3 class="heading__tertiary">TIRADITO CALLAO</h3>
+                    <p class="menu__ingredients">Cobia tiradito with coriander       tiger’s milk, black tobika, crème fraiche & sweet potato        crunchies</p>
+                    <button class="btn__empty">$8.95</button>
+                </div>
+            </div>
+    
+            <div class="menu__courses sides-margin parallax_scroll" id="menu_3">
+                <div class="menu__title"><h2 class="heading__secondary title__main">SIDES</h2></div>
+                <div class="menu__item">
+                    <h3 class="heading__tertiary">SUPER POLLO</h3>
+                    <p class="menu__ingredients">Marinated corn fed chicken
+                        pieces with rocotto salsa</p>
+                    <button class="btn__empty">$4.95</button>
+                </div>
+                <div class="menu__item">
+                    <h3 class="heading__tertiary">PATATAS FRITAS</h3>
+                    <p class="menu__ingredients">Sweet potato fries with aji
+                        rocotto mayonnaise (v)</p>
+                    <button class="btn__empty">$4.95</button>
+                </div>
+            </div>
+    
+            <div class="menu__courses desserts-margin parallax_scroll-neg" id="menu_4">
+                <div class="menu__title"><h2 class="heading__secondary title__main">DESSERTS</h2></div>
+                <div class="menu__item">
+                    <h3 class="heading__tertiary">ICECREAM</h3>
+                    <p class="menu__ingredients">Lorem ipsum dolor sit amet
+                        salerma petrum sea</p>
+                    <button class="btn__empty">$3.95</button>
+                </div>
+                <div class="menu__item">
+                    <h3 class="heading__tertiary">TIRAMISU</h3>
+                    <p class="menu__ingredients">Lorem ipsum dolor sit amet
+                        salerma petrum sea</p>
+                    <button class="btn__empty">$3.95</button>
+                </div>
+                <div class="menu__item">
+                    <h3 class="heading__tertiary">CHOCOLATE BROWNIE</h3>
+                    <p class="menu__ingredients">Lorem ipsum dolor sit amet
+                        salerma petrum sea</p>
+                    <button class="btn__empty">$3.95</button>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section class="recipes js--n">
+        <div class="recipes__header">
+            <div class="recipes__header--right">
+                <h2 class="heading__secondary"><span>Popular</span></h2>
+                <h2 class="heading__secondary heading__secondary--bg">Recipes</h2>
+                <button class="btn">SEE ALL</button>
+            </div>
+            <div class="recipes__header--left">
+                <p class="recipes__header--text">DO YOU WANT TO SHARE YOUR RECIPE?</p>
+                <button class="btn">SEND IT NOW</button>
+            </div>
+        </div>
+
+        <div class="box__cards-re" id='recipes'>
+            <div class="card-re card-re--1">
+                <div class="card-re__top card-re__img--1">
+                    <div class="card-re__servings"><p><span>4</span> servings</p></div>
+                    <div class="card-re__arrow"><ion-icon name="arrow-forward"></ion-icon></div>
+                </div>
+                <div class="card-re__content">
+                    <div class="card-re__dif">DIFFICULTY</div>
+                    <div class="card-re__title">CHARRED BROCCOLI & CHEAT’S VEGGIE
+                        ROMESCO TOAST</div>
+                    <div class="card-re__text">Make a speedy version of romesco sauce with its famous almond and red pepper flavours. Serve on sourdough and add broccoli for a colourful, veget…</div>    
+                </div>
+                <div class="card-re__user">USER FULL NAME</div>
+            </div>
+
+            <div class="card-re card-re--2">
+                <div class="card-re__top card-re__img--2">
+                    <div class="card-re__servings"><p><span>4</span> servings</p></div>
+                    <div class="card-re__arrow"><ion-icon name="arrow-forward"></ion-icon></div>
+                </div>
+                <div class="card-re__content">
+                    <div class="card-re__dif">DIFFICULTY</div>
+                    <div class="card-re__title">PINEAPPLE FRUIT SALAD
+                        WITH FRESH CREAM</div>
+                    <div class="card-re__text">The pineapple juice is the star   of the dressing and what gives it such a refreshing and sweet taste. Pineapple juice is kno</div>    
+                </div>
+                <div class="card-re__user">USER FULL NAME</div>
+            </div>
+
+            <div class="card-re card-re--3">
+                <div class="card-re__top card-re__img--3">
+                    <div class="card-re__servings"><p><span>4</span> servings</p></div>
+                    <div class="card-re__arrow"><ion-icon name="arrow-forward"></ion-icon></div>
+                </div>
+                <div class="card-re__content">
+                    <div class="card-re__dif">DIFFICULTY</div>
+                    <div class="card-re__title">CHEESE, SPINACH &
+                        MUSHROOM STUFFED CHI...</div>
+                    <div class="card-re__text">Amp up this dinner party
+                        classic by stuffing three types
+                        of cheese, spinach and
+                        mushroom into the chicken…</div>    
+                </div>
+                <div class="card-re__user">USER FULL NAME</div>
+            </div>
+
+            <div class="card-re card-re--4">
+                <div class="card-re__top card-re__img--4">
+                    <div class="card-re__servings"><p><span>8</span> servings</p></div>
+                    <div class="card-re__arrow"><ion-icon name="arrow-forward"></ion-icon></div>
+                </div>
+                <div class="card-re__content">
+                    <div class="card-re__dif">DIFFICULTY</div>
+                    <div class="card-re__title">FETA AND PEACH
+                        COUSCOUS</div>
+                    <div class="card-re__text">Grab just four ingredients to    make this easy, light lunch and enjoy a taste of summer.The    combination of peaches, feta...</div>    
+                </div>
+                <div class="card-re__user">USER FULL NAME</div>
+            </div>
+
+            <div class="card-re card-re--1">
+                <div class="card-re__top card-re__img--1">
+                    <div class="card-re__servings"><p><span>4</span> servings</p></div>
+                    <div class="card-re__arrow"><ion-icon name="arrow-forward"></ion-icon></div>
+                </div>
+                <div class="card-re__content">
+                    <div class="card-re__dif">DIFFICULTY</div>
+                    <div class="card-re__title">CHARRED BROCCOLI & CHEAT’S VEGGIE
+                        ROMESCO TOAST</div>
+                    <div class="card-re__text">Make a speedy version of romesco sauce with its famous almond and red pepper flavours. Serve on sourdough and add broccoli for a colourful, veget…</div>    
+                </div>
+                <div class="card-re__user">USER FULL NAME</div>
+            </div>
+
+            <div class="card-re card-re--2">
+                <div class="card-re__top card-re__img--2">
+                    <div class="card-re__servings"><p><span>4</span> servings</p></div>
+                    <div class="card-re__arrow"><ion-icon name="arrow-forward"></ion-icon></div>
+                </div>
+                <div class="card-re__content">
+                    <div class="card-re__dif">DIFFICULTY</div>
+                    <div class="card-re__title">PINEAPPLE FRUIT SALAD
+                        WITH FRESH CREAM</div>
+                    <div class="card-re__text">The pineapple juice is the star   of the dressing and what gives it such a refreshing and sweet taste. Pineapple juice is kno</div>    
+                </div>
+                <div class="card-re__user">USER FULL NAME</div>
+            </div>
+
+            <div class="card-re card-re--3">
+                <div class="card-re__top card-re__img--3">
+                    <div class="card-re__servings"><p><span>4</span> servings</p></div>
+                    <div class="card-re__arrow"><ion-icon name="arrow-forward"></ion-icon></div>
+                </div>
+                <div class="card-re__content">
+                    <div class="card-re__dif">DIFFICULTY</div>
+                    <div class="card-re__title">CHEESE, SPINACH &
+                        MUSHROOM STUFFED CHI...</div>
+                    <div class="card-re__text">Amp up this dinner party
+                        classic by stuffing three types
+                        of cheese, spinach and
+                        mushroom into the chicken…</div>    
+                </div>
+                <div class="card-re__user">USER FULL NAME</div>
+            </div>
+
+            <div class="card-re card-re--4">
+                <div class="card-re__top card-re__img--4">
+                    <div class="card-re__servings"><p><span>8</span> servings</p></div>
+                    <div class="card-re__arrow"><ion-icon name="arrow-forward"></ion-icon></div>
+                </div>
+                <div class="card-re__content">
+                    <div class="card-re__dif">DIFFICULTY</div>
+                    <div class="card-re__title">FETA AND PEACH
+                        COUSCOUS</div>
+                    <div class="card-re__text">Grab just four ingredients to    make this easy, light lunch and enjoy a taste of summer.The    combination of peaches, feta...</div>    
+                </div>
+                <div class="card-re__user">USER FULL NAME</div>
+            </div>
+
+            
+
+            
+        </div>
+
+        <div class="recipes__arrows">
+            <div class="recipes__arrows--left">&larr;</div>
+            <div class="recipes__arrows--right">&rarr;</div>
+        </div>
+        
+    </section>
+
+    <section class="collab js--n">
+        <div class="collab__content">
+            <h2 class="heading__secondary heading__secondary--small">COLLABORATE</h2>
+            <h2 class="heading__secondary heading__secondary--big "><span class="heading__secondary--bg-white">WITH</span>  US</h2>
+            <p class="collab__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>
+
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+        </div>
+        <form action="" class="collab__form">
+            <label for="" class="collab__label collab__label-name">NAME</label>
+            <label for="" class="collab__label collab__label-surname">SURNAME</label>
+            <input class= "collab__input collab__input-name"type="text" name="NAME" id="text" placeholder="Name">
+            <input class= "collab__input collab__input-surname"type="text" name="SURNAME" id="text" placeholder="Surname">
+            <label for="" class="collab__label collab__label-phone">PHONE</label>
+            <label for="" class="collab__label collab__label-email">EMAIL ADDRESS</label>
+            <input class= "collab__input collab__input-phone"type="text" name="phone" id="text" placeholder="Phone">
+            <input class= "collab__input collab__input-email"type="text" name="EMAIL" id="text" placeholder="Email">
+            <label for="" class="collab__label collab__label-exp">EXPERIENCE</label>
+            <label for="" class="collab__label collab__label-where">WHERE DID YOU HEAR</label>
+            <select name="experience" id="experience" class="collab__combo collab__combo-exp">
+                <option value="begginer">Begginer</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Chef">Chef</option>
+            </select>
+            <select name="experience" id="experience" class="collab__combo collab__combo-where">
+                <option value="FACEBOOK">FACEBOOK</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Friends">Friends</option>
+            </select>
+        </form>
+    </section>
+
+    <footer class="footer js--n">
+        <ul class="footer__nav">
+            <li class="footer__item"><a href="#" class="footer__link">ABOUT</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">COMMUNITY</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">LOCATION</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">OUR MENU</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">RECIPIES</a></li>
+        </ul>
+        <img src="rcs/img/logo_transparent.png" alt="logo" class="footer__logo">
+        <p class="footer__copy">2021. Company. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        <div class="footer__social">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="basketball"></ion-icon>
+        </div>
+    </footer>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src='script-animation.js'  type="text/javascript"></script>
+    <script src='script.js'  type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+// Color Variables
+
+$--color-primary: #ffdac9;
+
+$--bg-color: #fcfcfc;
+
+//Font Variable
+
+$--font-head: 'din_condensedbold';
+$--font-primary: 'Gill Sans';
+
+
+
+//Media Querry
+$bp-largest-2: 93.75em; // 1500
+$bp-largest: 81.25em; // 1300px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+    @media only screen and (max-width: $bp-large) {
+        font-size: 43.75%;
+    }
+    background-color: $--bg-color;
+}
+
+body{
+    font-weight: 300;
+    line-height: 1.5;
+    font-family: $--font-primary;
+}
+
+.btn{
+    border-style: none;
+    background-color: $--color-primary;
+    padding: .5rem .8rem;
+    font-family: $--font-head;
+    font-size: 1.5rem;
+
+    &__empty{
+        background-color: transparent;
+        border: 2px solid $--color-primary;
+        font-family: $--font-head;
+        padding: .5rem 1rem;
+    }
+}

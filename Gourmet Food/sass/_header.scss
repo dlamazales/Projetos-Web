@@ -1,0 +1,30 @@
+header{
+    
+
+    background-color: $--color-primary;
+    background-image: url(../rcs/img/hero.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-family: $--font-head;
+
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    width: auto;
+}
+
+.logo__head{
+    width: 25rem;
+    position: absolute;
+    top: 10rem;
+    left: 35rem;
+    transform: rotate(-33deg);
+}

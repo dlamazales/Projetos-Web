@@ -1,0 +1,111 @@
+.collab{
+    padding: 8rem 15rem;
+    background-color: #FFDAC9;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 8rem 1rem;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 6rem;
+        width: 50%;
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 2rem 3rem;
+        }
+
+        h2{
+            text-align: center;
+            align-self: flex-start;
+        }
+    }
+
+    &__form{
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, max-content);
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, max-content);
+        }
+
+        column-gap: 2rem;
+        row-gap: 1.5rem;
+        padding: 4rem 6rem;
+        font-size: 2rem;
+        align-self: center;
+        font-family: $--font-head;
+        letter-spacing: .2rem;
+    }
+
+    &__input{
+        height: 3rem;
+        font-size: 2rem;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #767676;
+        transition: all .5s;
+        font-family: $--font-primary;
+        font-weight: 600;
+        
+
+        &::placeholder{
+            color: #979797;
+        }
+
+        &:focus{
+            outline: none;
+            border-bottom: 3px solid white;
+            
+        }
+
+        &-name{
+            @media only screen and (max-width: $bp-medium) {
+                grid-row: 2 / 3;
+            }
+        }
+
+        &-phone{
+            @media only screen and (max-width: $bp-medium) {
+                grid-row: 6 / 7;
+            }
+        }
+    }
+
+   &__combo{
+        font-size: 2rem;
+        font-family: $--font-head;
+        height: 3rem;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #767676;
+
+        &-exp{
+            @media only screen and (max-width: $bp-medium) {
+                grid-row: 10 / 11;
+            }
+        }
+   } 
+
+    &__text{
+        font-size: 2.5rem;
+        margin-right: 16rem;
+        padding-top: 2rem;
+        line-height: 1.2;
+        font-weight: 600;
+
+        color: #767676;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1.5rem;
+        }
+    }
+    
+    
+}
